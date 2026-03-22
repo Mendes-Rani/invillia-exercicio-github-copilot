@@ -78,6 +78,10 @@ section h3 {
   list-style-type: none; /* Remove os marcadores padrão */
   padding-left: 0;
   margin-top: 10px;
+  border: 1px solid #ddd; /* Adiciona uma borda ao redor da lista */
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Fundo suave para destacar a lista */
+  padding: 10px;
 }
 
 .activity-card ul li {
@@ -86,11 +90,17 @@ section h3 {
   color: #333;
   display: flex;
   align-items: center;
+  padding: 5px 0; /* Espaçamento interno para os itens */
+  border-bottom: 1px solid #eee; /* Linha separadora entre os itens */
+}
+
+.activity-card ul li:last-child {
+  border-bottom: none; /* Remove a linha do último item */
 }
 
 .activity-card ul li::before {
-  content: '\2022'; /* Adiciona um marcador personalizado */
-  color: #1a237e; /* Cor do marcador */
+  content: '\2713'; /* Adiciona um ícone de check */
+  color: #1a237e; /* Cor do ícone */
   font-weight: bold;
   display: inline-block;
   width: 1em;
