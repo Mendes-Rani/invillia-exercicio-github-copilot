@@ -80,8 +80,9 @@ section h3 {
   margin-top: 10px;
   border: 1px solid #ddd; /* Adiciona uma borda ao redor da lista */
   border-radius: 5px;
-  background-color: #f9f9f9; /* Fundo suave para destacar a lista */
+  background: linear-gradient(90deg, #f9f9f9, #e3f2fd); /* Fundo com gradiente */
   padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
 }
 
 .activity-card ul li {
@@ -90,12 +91,17 @@ section h3 {
   color: #333;
   display: flex;
   align-items: center;
-  padding: 5px 0; /* Espaçamento interno para os itens */
+  padding: 8px 10px; /* Espaçamento interno para os itens */
   border-bottom: 1px solid #eee; /* Linha separadora entre os itens */
+  transition: background-color 0.3s ease; /* Transição suave para hover */
 }
 
 .activity-card ul li:last-child {
   border-bottom: none; /* Remove a linha do último item */
+}
+
+.activity-card ul li:hover {
+  background-color: #e3f2fd; /* Destaque ao passar o mouse */
 }
 
 .activity-card ul li::before {
@@ -105,6 +111,13 @@ section h3 {
   display: inline-block;
   width: 1em;
   margin-right: 10px;
+}
+
+.activity-card .participant-count {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a237e;
+  margin-bottom: 10px;
 }
 
 .form-group {
